@@ -438,6 +438,9 @@ services:
         condition: service_healthy
       analytics:
         condition: service_healthy
+
+    ports:
+      - "6543:6543"
     command:
       - /bin/sh
       - -c
